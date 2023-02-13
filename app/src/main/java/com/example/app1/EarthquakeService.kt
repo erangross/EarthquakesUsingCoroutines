@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 
 interface EarthquakeService {
-    @GET("/fdsnws/event/1/query?format=geojson&limit=10")
+    @GET("earthquakes/feed/v1.0/summary/all_hour.geojson")
     suspend fun getEarthquakes(): retrofit2.Response<Earthquake>
 }
 
