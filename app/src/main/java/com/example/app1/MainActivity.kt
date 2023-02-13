@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
      * The coroutine fetches the earthquake data from the API and logs the ID, magnitude, place, time, and coordinates for each earthquake.
      */
 
-    fun fetchEarthquakeListUsingCoroutines() {
+    private fun fetchEarthquakeListUsingCoroutines() {
         val retrofit = Retrofit.Builder()
             .baseUrl("https://earthquake.usgs.gov/")
             .addConverterFactory(GsonConverterFactory.create())
